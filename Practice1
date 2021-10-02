@@ -1,0 +1,104 @@
+# Task 1
+# declare 3 variables with one assignment statement and assign each one an integer value
+
+var1, var2, var3 = 1, 2, 3
+
+# Task 2
+# convert each of your previous variables to float objects
+
+var1, var2, var3 = 1, 2, 3
+
+x = float(var1)
+y = float(var2)
+z = float(var3)
+
+print(x, y, z)
+
+# Task 3
+# convert each of your previous variables to string objects
+
+num1 = 1
+num2 = 2
+num3 = 3
+
+a = str(num1)
+b = str(num2)
+c = str(num3)
+
+print(a, b, c)
+
+# Task 4
+# Print the result of dividing 783.56 by 123.2 and ensure that the answer results in an integer
+# expected outcome: 6
+
+i = 783.56
+j = 123.2
+
+print(int(i/j))
+
+# Task 5
+# Determine if 2019 is a leap year and print the result.
+# expected outcome: 3
+
+import calendar
+
+calendar.isleap(2019)
+
+lp = 2019 % 4
+
+print(lp)
+
+# Task 6
+# Print the calculated length of myFirstString.
+# expected outcome: 35
+
+myFirstString = 'I love working with Python so much!'
+
+print(len(myFirstString))
+
+# Task 7
+# Create a string value and print it with the first letter of each word 
+# capitalized using a Python method.
+
+mystring = 'I am lost with python'
+
+newstring = mystring.title()
+
+print(newstring)
+
+# Task 8
+# Create a string value and determine if the string consists of only lowercase characters. 
+# Print the results.
+# expected outcome: True or False
+
+mystring = 'I am lost with python'
+
+if str.islower(mystring):
+    print('True')
+else:
+    print('False')
+
+# Task 9
+# Use the given variable to construct a python statement that counts how many times 
+# the word pizza is used. Print the final count.
+# expected outcome: 3
+
+commercial = 'In the Little Ceasars pizza commercial the character says, "pizza, pizza"!'
+
+c = commercial.count('pizza')
+
+print(c)
+
+# Task 10
+# Use the given username and phone to create a message that lets the user know that you 
+# will be calling
+# at a specified number for your appointment. Use the format method to insert data 
+# into the printed message.
+# expected outcome:
+# Hi, Allen. I will call you at 888-555-0011 for our appointment.
+username = 'Allen'
+phone = 8885550011
+
+newphone = '{}-{}-{}'.format('888', '555', '0011')
+ 
+print('Hi, %s. I will call you at %s for our appointment.' % (username, newphone))
